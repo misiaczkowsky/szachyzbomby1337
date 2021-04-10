@@ -1,0 +1,186 @@
+#grid-container {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    height:85vmin;
+    width:85vmin;
+    row-gap:1vmin;
+    column-gap:1vmin;
+    background:rgba(146, 143, 142, 0.6);
+border-radius: 20px;
+padding:30px;
+backdrop-filter:blur(5px);
+}
+
+div.black, div.white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    height: calc(76vmin/8);
+    width: calc(76vmin/8);
+    border-radius: 10px;
+}
+
+div.black > img, div.white > img {
+    height: 80%;
+    -webkit-filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.3));
+}
+
+div.black {
+    background-color: black;
+    opacity:0.85;
+}
+div.white {
+    background-color: white;
+    opacity:0.85;
+}
+main{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://wallpaperaccess.com/full/1307130.jpg");
+}
+main h3{
+    color: ghostwhite;
+}
+body{
+    color:white ;
+    font-family: 'Redressed', cursive;
+    margin:0;
+    padding:0;
+}
+.panel{
+    height:80vmin;
+    width:35vmin;
+    background:rgba(146, 143, 142, 0.6);
+    border-radius: 25px;
+    margin-left:40px;
+
+}
+
+#goniec{
+width:250px;
+margin-right:-100px;
+margin-top:100px;
+}
+#kon{
+margin-left:-100px;
+margin-top:-100px;
+}
+.panel header{
+width:90%;
+height:50px;
+display:flex;
+justify-content: space-evenly;
+align-items:center;
+box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+border-radius:10px;
+margin-left:auto;
+margin-right:auto;
+margin-top:25px;
+}
+.panel header h1 {
+    margin: 0;
+    display:inline;
+    font-size:1.5rem;
+
+}
+.panel header p {
+    margin: 0; 
+    display:inline;
+    font-size:1rem;
+}
+.przeciwnik-wrapper{
+    width:80%;
+    height:100px;
+    margin-top:10px;
+    display:flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top:15px;
+    
+
+
+   
+}
+.btn-wrapper{
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 50px;
+    width:80%;
+    display:flex;
+    margin-left:auto;
+margin-right:auto;
+margin-top:10px;
+padding:5px;
+height:80px;
+}
+.btn-wrapper button:first-of-type{
+    height:100%;
+    width:45%;
+    background:none;
+    border:none;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+}
+.btn-wrapper button:last-of-type{
+    height:100%;
+    width:45%;
+    background:none;
+    border:none;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+}
+.btn-wrapper b{
+    color: white;
+}
+.chat-wrapper{
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7); 
+    width:80%;
+    border-radius:10px;
+    margin-top:10px;
+    height:300px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:10px;
+}
+.chat-input-wrapper{
+    font-size:20px;
+    margin-top:10px;
+    border-radius:10px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7); 
+    width:80%;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:10px;
+}
+.przeciwnik-wrapper p{
+    margin:0;
+}
+.przeciwnik1{
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+    border-radius:10px;
+height:65px;
+width: 45%;
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction:column;
+}
+.przeciwnik2{
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+    border-radius:10px;
+height: 65px;
+width:45%;
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
